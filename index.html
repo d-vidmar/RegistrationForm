@@ -6,17 +6,23 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		
 		<div class="zunanji">
 			<div class="okno">
 				<h1>Sign in to your account</h1>
 				<form action="" method="GET">
-					<p>Email</p>
-					<input type="email" name="email"></input>
-					<p>Password</p>
-					<input type="password" name="password"></input><br>
-					<input type="checkbox" name="remember">Remember me on this device</input><br>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email"></input>
+					<label for="password">Password</label>
+					<a href="#">Forgot your password?</a>
+					<input type="password" name="password" id="password"></input><br>
+					<input type="checkbox" name="remember" id="checkbox">
+						<label for="checkbox">Remember me on this device</label>
+					</input><br>
 					<input type="submit" value="Sign in"></input>
+					
+					<a href="#" class="otherSignin">Google</a>
+					<a href="#" class="otherSignin">Passkey</a>
+					<a href="#" class="otherSignin">SSO</a>
 				</form>
 			</div>
 		</div>
