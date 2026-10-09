@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica Neue,Ubuntu,sans-serif;
+	background-image: url("../images/background.png");
+	background-position: 40%;
+	background-repeat: no-repeat;
+	font-weight: 600;
+}
+
+h1{
+	font-size: 22px;
+	color: #555555;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+
+.zunanji{
+	width: 100%;
+	
+}
+
+.okno{
+	width: 450px;
+	background-color: white;
+	box-shadow: 0 0 15px rgba(0,0,0,0.4);
+	margin: 150px auto;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+
+label{
+	font-size: 14px;
+	font-style: bold;
+	color: #555555;
+	margin-left: 15px;
+}
+label:hover{
+	color: #111111;
+	cursor: pointer;
+}
+#rememberLabel{
+	margin-left: -5px;
+	color: #222222;
+}
+#rememberLabel:hover{
+	cursor: default;
+	color: #222222;
+}
+
+
+#email, #password{
+	font-size: 20px;
+	height: 40px;
+	width: calc(100% - 50px); /*margin: 2x20px + padding 2x10px*/
+	padding:2px 10px;
+	border: 1px solid #cfcccc;
+	border-radius: 5px;
+	margin: 15px 15px 20px;
+	outline-color: white;
+}
+#email:focus, #password:focus{
+	outline: 3px solid #d6c7fc; 
+	border: 1px solid #bc8cff;
+	transition: outline 0.5s, border 0.5s;
+}
+
+#passwordText{
+	display: flex;
+	justify-content: space-between;
+}
+#forgotPassword{
+	padding: 0 15px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #8438ff;
+}
+#forgotPassword:hover{
+	color: black;
+}
+
+#remember{
+	margin: 0 15px 20px;
+}
+
+#signin{
+	background-color: #8c5fed;
+	color: white;
+	font-size: 18px;
+	width: calc(100% - 30px);
+	height: 48px;
+	padding: 2px 20px;
+	border: none;
+	border-radius: 8px;
+	margin: 0 15px 20px;
+}
+
+#signinWithText{
+	display: flex;
+	justify-content: center;
+	align-content: top;
+	margin: 0 15px 28px;
+	text-align: center;
+}
+#signinWithText p{
+	display: block;
+	background-color: white;
+	padding: 0 10px;
+	z-index: 1;
+	position: fixed;
+	font-size: 14px;
+	color: #757575;
+}
+#signinWithText div{
+	border-bottom: 1px solid #757575;
+	width: 100%;
+	height: 10px;
+}
+
+.otherSignin{
+	display: block;
+	text-decoration: none;
+	color: #222222;
+	/*width: calc(100% - 30px);*/
+	border: 1px solid #cfcccc;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 15px 8px;
+	transition: border 0.2s;
+}
+.otherSignin:hover{
+	border: 1px solid #4235fc;
+	transition: border 0.5s;
+}
+
+#createAccount{
+	width: 100%;
+	border: 1px solid #efefef;
+	border-radius: 10px;
+	height: 60px;
+	background-color: #fbfbfb;
+	align-content: center;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 25px;
+}
+#createAccount a{
+	text-decoration: none;
+	color: #4235fc;
+}
+#createAccount a:hover{
+	text-decoration: underline;
+}
