@@ -85,6 +85,8 @@ label:hover{
 
 #remember{
 	margin: 0 15px 20px;
+	width: 15px;
+	height: 15px;
 }
 
 #signin{
@@ -113,10 +115,10 @@ label:hover{
 	z-index: 1;
 	position: fixed;
 	font-size: 14px;
-	color: #757575;
+	color: #525252;
 }
 #signinWithText div{
-	border-bottom: 1px solid #757575;
+	border-bottom: 1px solid #acacac;
 	width: 100%;
 	height: 10px;
 }
