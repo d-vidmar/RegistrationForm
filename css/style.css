@@ -1,51 +1,75 @@
+/*#675dff*/
+/* d4dee9 */
+/* 3c4257 */
+
 *{
 	margin: 0;
 	padding: 0;
 }
 
 body{
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica Neue,Ubuntu,sans-serif;
+	font-family: "Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
 	background-image: url("../images/background.png");
 	background-position: 40%;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	font-weight: 600;
+	width: 100%;
+}
+
+header{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	height: 75px;
+	margin: 0;
+	align-content: center;
+	padding-left: 12%;
+}
+.headericon{
+	height: 30px;
 }
 
 h1{
-	font-size: 22px;
-	color: #555555;
+	font-size: 26px;
+	letter-spacing: -.2px;
+	color: #3c4257;
 	margin-bottom: 20px;
 	padding: 15px;
 }
 
 .zunanji{
-	width: 100%;
-	
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 70px);
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(0,0,0,0.1);
 }
 
+
 .okno{
-	width: 450px;
+	width: 420px;
 	background-color: white;
 	box-shadow: 0 0 15px rgba(0,0,0,0.4);
-	margin: 150px auto;
+	margin: 30px auto;
 	border-radius: 10px;
-	padding: 5px;
+	padding: 50px 50px 5px 50px;
 }
 
 
 label{
 	font-size: 14px;
 	font-style: bold;
-	color: #555555;
-	margin-left: 15px;
+	color: #3c4257;
 }
 label:hover{
 	color: #111111;
 	cursor: pointer;
 }
 #rememberLabel{
-	margin-left: -5px;
-	color: #222222;
+	margin-left: 5px;
+	color: #1a2c44;
 }
 #rememberLabel:hover{
 	cursor: default;
@@ -53,17 +77,18 @@ label:hover{
 }
 
 
-#email, #password{
-	font-size: 20px;
+#email, #password, #fullname{
+	font-size: 16px;
 	height: 40px;
-	width: calc(100% - 50px); /*margin: 2x20px + padding 2x10px*/
+	width: calc(100% - 20px); /*padding - 2x10px*/
 	padding:2px 10px;
-	border: 1px solid #cfcccc;
+	border: 1px solid #d4dee9;
 	border-radius: 5px;
-	margin: 15px 15px 20px;
+	margin: 15px 0 20px;
 	outline-color: white;
+	color: #3c4257;
 }
-#email:focus, #password:focus{
+#email:focus, #password:focus, #fullname:focus{
 	outline: 3px solid #d6c7fc; 
 	border: 1px solid #bc8cff;
 	transition: outline 0.5s, border 0.5s;
@@ -74,51 +99,49 @@ label:hover{
 	justify-content: space-between;
 }
 #forgotPassword{
-	padding: 0 15px;
 	text-decoration: none;
 	font-size: 14px;
-	color: #8438ff;
+	color: #675dff;
 }
 #forgotPassword:hover{
 	color: black;
 }
 
 #remember{
-	margin: 0 15px 20px;
+	margin-bottom: 20px;
 	width: 15px;
 	height: 15px;
 }
 
 #signin{
-	background-color: #8c5fed;
+	background-color: #675dff;
 	color: white;
 	font-size: 18px;
-	width: calc(100% - 30px);
+	width: 100%;
 	height: 48px;
 	padding: 2px 20px;
 	border: none;
 	border-radius: 8px;
-	margin: 0 15px 20px;
+	margin-bottom: 20px;
 }
 
 #signinWithText{
 	display: flex;
 	justify-content: center;
 	align-content: top;
-	margin: 0 15px 28px;
+	margin-bottom: 28px;
 	text-align: center;
 }
 #signinWithText p{
 	display: block;
 	background-color: white;
 	padding: 0 10px;
-	z-index: 1;
 	position: absolute;
 	font-size: 14px;
-	color: #525252;
+	color: #3c4f69;
 }
 #signinWithText div{
-	border-bottom: 1px solid #acacac;
+	border-bottom: 1px solid #d4dee9;
 	width: 100%;
 	height: 10px;
 }
@@ -127,13 +150,12 @@ label:hover{
 	display: block;
 	text-decoration: none;
 	color: #222222;
-	/*width: calc(100% - 30px);*/
-	border: 1px solid #cfcccc;
+	border: 1px solid #d4dee9;
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
 	border-radius: 5px;
-	margin: 0 15px 8px;
+	margin-bottom: 8px;
 	transition: border 0.2s;
 }
 .otherSignin:hover{
@@ -142,20 +164,36 @@ label:hover{
 }
 
 #createAccount{
-	width: 100%;
-	border: 1px solid #efefef;
+	width: calc(100% + 90px);
+	border: 1px solid #ecf1f6;
 	border-radius: 10px;
 	height: 60px;
 	background-color: #fbfbfb;
+	color: #414552;
 	align-content: center;
 	text-align: center;
 	font-size: 14px;
 	margin-top: 25px;
+	margin-left: -45px;
 }
 #createAccount a{
 	text-decoration: none;
-	color: #4235fc;
+	color: #675dff;
 }
 #createAccount a:hover{
 	text-decoration: underline;
+}
+
+footer{
+	height:30px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+}
+footer a{
+	text-decoration: none;
+	color: #273951;
+	margin-left: 20px;
+	font-weight: 600;
+	font-size: 14px;
 }
