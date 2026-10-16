@@ -16,7 +16,7 @@ This project is the replica of Stripe login and registration form, **created for
 Log in and registration form:
 
 
-<img height="600" alt="image" src="https://github.com/user-attachments/assets/b1400d71-2963-4e17-a3c0-56db839a157c" />
-<img height="600" alt="image" src="https://github.com/user-attachments/assets/723c98cd-3d30-4f05-acf7-d9f8c8a254cb" />
+<img height="500" alt="image" src="https://github.com/user-attachments/assets/b1400d71-2963-4e17-a3c0-56db839a157c" />
+<img height="500" alt="image" src="https://github.com/user-attachments/assets/723c98cd-3d30-4f05-acf7-d9f8c8a254cb" />
 
 
