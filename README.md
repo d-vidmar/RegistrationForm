@@ -13,9 +13,10 @@ This project is the replica of Stripe login and registration form, **created for
 - **Registration page:** includes input fields for email, full name and password and option for selecting country. Default selected country is Slovenia.
 
 ## Screenshots
-Log in page:
-<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/8fc4d4b9-10d9-4270-9c74-1416f09bda68" />
+Log in and registration form:
 
-Registration page:
-<img width="1919" height="937" alt="image" src="https://github.com/user-attachments/assets/2a150293-4461-4e0f-8167-545cabc55de8" />
+
+<img height="600" alt="image" src="https://github.com/user-attachments/assets/b1400d71-2963-4e17-a3c0-56db839a157c" />
+<img height="600" alt="image" src="https://github.com/user-attachments/assets/723c98cd-3d30-4f05-acf7-d9f8c8a254cb" />
+
 
