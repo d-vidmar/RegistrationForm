@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Stripe Login</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.png">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</head>
+	<body>
+		<header>
+			<img src="images/stripe-logo.svg" height="30px">
+		</header>
+		<div class="zunanji">
+			<div class="okno">
+				<h1>Sign in to your account</h1>
+				<form action="" method="GET" id="loginForm">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" maxlength="50" required></input>
+					<div id="passwordText">
+						<label for="password">Password</label>
+						<a href="#" id="forgotPassword">Forgot your password?</a>
+					</div>
+					<input type="password" name="password" id="password" required></input><br>
+					<input type="checkbox" name="remember" id="remember">
+						<label for="remember" id="rememberLabel">Remember me on this device</label>
+					</input><br>
+					<input type="submit" value="Sign in" id="signin"></input>
+					<div id="signinWithText">
+						<div></div>
+						<p>Or sign in with</p>
+					</div>
+					<a href="#" class="otherSignin"><img src="images/google-logo.svg"> Google</a>
+					<a href="#" class="otherSignin">
+						<img src="images/passkey-logo.svg" height="16px"> Passkey</a>
+					<a href="#" class="otherSignin">
+						<img src="images/sso-logo.svg" height="16px"> SSO</a>
+					
+				</form>
+				<div id="createAccount">
+					New to stripe? <a href="registration.html">Create account</a>
+				</div>
+			</div>
+			
+			<footer>
+				<a href="#">&#169 Stripe</a>
+				<a href="#">Privacy &amp terms</a>
+			</footer>
+			
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

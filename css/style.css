@@ -88,6 +88,7 @@ label:hover{
 	outline-color: white;
 	color: #3c4257;
 }
+
 #email:focus, #password:focus, #fullname:focus{
 	outline: 3px solid #d6c7fc; 
 	border: 1px solid #bc8cff;
