@@ -12,6 +12,7 @@ This project is the replica of Stripe login and registration form, **created for
 ## Features
 - **Log in page:** has input fields for email and password, both fields are required. When fields are focused, they smoothly change the outline color. Form also includes other sign in buttons: Google, Passkey and SSO. These buttons change border color when hovered, but doesn't do anything when pressed. For fake log in you can use username "user@example.com" and password "password123".
 - **Registration page:** includes input fields for email, full name and password and option for selecting country. Default selected country is Slovenia.
+- **Sweet alert:** When you try to log in, sweet alert wll appear.
 
 ## Screenshots
 Log in and registration form:
